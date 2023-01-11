@@ -36,7 +36,7 @@ app.route('/api/google')
          valueInputOption: 'USER_ENTERED',
          resource: {
             values: [
-               [new Date().toLocaleString().replace(/\./g, '/'), data?.name, data?.email, data?.phone, data?.tarif, data?.telegram]
+               [new Date(data?.date).toLocaleString().replace(/\./g, '/'), data?.name, data?.email, data?.phone, data?.tarif, data?.telegram]
             ]
          }
       })
