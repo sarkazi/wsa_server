@@ -47,7 +47,7 @@ app.route('/api/google')
    })
 
 
-const port = 7777
+const port = process.env.PORT
 
 app.listen(port, () => {
    console.log(`збс на ${port} порту`)
