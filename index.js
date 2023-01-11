@@ -2,8 +2,6 @@ import express from 'express'
 import { google } from 'googleapis'
 import cors from 'cors'
 import dotenv from 'dotenv'
-import { GoogleSpreadsheet } from 'google-spreadsheet'
-import creds from './service_key.json' assert { type: "json" }
 
 const app = express();
 
